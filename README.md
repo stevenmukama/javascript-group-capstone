@@ -17,12 +17,19 @@ In order to successfully copy a given project board, you need to follow the belo
     - ...
 
 3. Install [jq](https://stedolan.github.io/jq/download/).
-
-``` bash
-    brew install jq # for OS X
-    sudo apt-get install jq # for Linux
-    chocolatey install jq # for Windows
-```
+    - OS X
+    ``` bash
+        brew install jq
+    ```
+     - Linux
+    ``` bash
+        sudo apt-get install jq
+    ```
+     - Windows - **run your windows CMD as an administrator**
+          ``` bash
+              choco install jq
+          ```
+          - if you do not have chocolately installed follow [this guide](https://www.liquidweb.com/kb/how-to-install-chocolatey-on-windows/)
 
 4. Generate [personal access token for GitHub API](https://github.com/settings/tokens/new?scopes=repo).
 
