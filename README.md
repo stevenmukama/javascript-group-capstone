@@ -12,8 +12,8 @@ In order to successfully copy a given project board, you need to follow the belo
 
 1. Initialize an empty repository for your group project.
 
-2. Manually [copy project board](https://docs.github.com/en/github/managing-your-work-on-github/copying-a-project-board) from a specific template to your own repo.
-    - [JavaScript Group Capstone](https://github.com/microverseinc/curriculum-javascript/projects/1)
+2. Manually [copy project board (only columns)](https://docs.github.com/en/github/managing-your-work-on-github/copying-a-project-board) from a specific template to your own repo. **IMPORTANT NOTE: do not copy cards manually, this tool will do it for you in a few seconds.**
+    - [Tmplate board: JavaScript Group Capstone](https://github.com/microverseinc/curriculum-javascript/projects/1)
     - ...
 
 3. Install [jq](https://stedolan.github.io/jq/download/).
@@ -46,8 +46,13 @@ In order to successfully copy a given project board, you need to follow the belo
          sh copy_github_board.sh <YOUR_GITHUB_AUTH_TOKEN> <SOURCE_GITHUB_USERNAME> <SOURCE_REPO_NAME> <YOUR_GITHUB_USERNAME> <YOUR_GROUP_PROJECT_REPO_NAME> 
      ```
      
-     - for example, in case of the JavaScript Group Capstone, you should use:
+     🐛 _In case of errors, try to use:_
+     ``` bash
+         bash copy_github_board.sh <YOUR_GITHUB_AUTH_TOKEN> <SOURCE_GITHUB_USERNAME> <SOURCE_REPO_NAME> <YOUR_GITHUB_USERNAME> <YOUR_GROUP_PROJECT_REPO_NAME> 
+     ```
      
+    - for example, in case of the JavaScript Group Capstone, you should use:
+
      ``` bash
          sh copy_github_board.sh <YOUR_GITHUB_AUTH_TOKEN> microverseinc curriculum-javascript <YOUR_GITHUB_USERNAME> <YOUR_GROUP_PROJECT_REPO_NAME> 
      ```
