@@ -13,7 +13,7 @@ In order to successfully copy a given project board, you need to follow the belo
 1. Initialize an empty repository for your group project.
 
 2. Manually [copy project board (only columns)](https://docs.github.com/en/github/managing-your-work-on-github/copying-a-project-board) from a specific template to your own repo. **IMPORTANT NOTE: do not copy cards manually, this tool will do it for you in a few seconds.**
-    - [Tmplate board: JavaScript Group Capstone](https://github.com/microverseinc/curriculum-javascript/projects/1)
+    - [Template board: JavaScript Group Capstone](https://github.com/microverseinc/curriculum-javascript/projects/1)
     - ...
 
 3. Install [jq](https://stedolan.github.io/jq/download/).
