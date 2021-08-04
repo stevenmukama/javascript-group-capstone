@@ -58,6 +58,16 @@ In order to successfully copy a given project board, you need to follow the belo
      ```
 5. Verify that the template project board and your board look exactly the same.
 
+### Troubleshooting
+
+When trying to use the .sh file to copy the kanban board to your repository, youmight see unexpected errors appeared such as this one:
+
+```bash
+jq: error (at :4): Cannot index string with string "id"
+```
+
+To fix it locally you need to createa new personal access token with permission to access and manage your repositories.
+
 
 ## 🤝 Contributing
 
