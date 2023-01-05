@@ -116,7 +116,17 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n//# sourceURL=webpack://webpack/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _modules_apiController_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/apiController.js */ \"./src/modules/apiController.js\");\n\n\n\nconst rederMovies = async (genresType) => {\n  let movies = await (0,_modules_apiController_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n  movies = movies.filter((item) => item.genres.indexOf(genresType) !== -1);\n  const mainSection = document.querySelector('main');\n  mainSection.innerHTML = '';\n  for (let i = 0; i < movies.length; i += 1) {\n    mainSection.innerHTML += `\n        <div class=\"movie\">\n        <img src=\"${movies[i].image.medium}\">\n        <div class=\"name-add-like\">\n            <h2>${movies[i].name}</h2>\n            <i class=\"far fa-heart fa-2x\"></i>\n        </div>\n        <div>\n            <p>5 likes</p>\n        </div>\n        <div class=\"comment-btn-div\">\n            <button>Comments</button>\n        </div>\n        </div>`;\n  }\n};\nrederMovies('Action');\nconst links = document.querySelectorAll('header li');\nconst resetLinks = () => {\n  for (let i = 0; i < links.length; i += 1) {\n    links[i].classList.remove('active');\n  }\n};\nfor (let i = 0; i < links.length; i += 1) {\n  links[i].addEventListener('click', () => {\n    rederMovies(links[i].textContent);\n    resetLinks();\n    links[i].classList.add('active');\n  });\n}\n\n//# sourceURL=webpack://webpack/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/modules/apiController.js":
+/*!**************************************!*\
+  !*** ./src/modules/apiController.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ getMovies)\n/* harmony export */ });\nconst getMovies = () => fetch('https://api.tvmaze.com/shows')\n  .then((response) => response.json());\n\n\n\n//# sourceURL=webpack://webpack/./src/modules/apiController.js?");
 
 /***/ })
 
