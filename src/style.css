@@ -1,6 +1,6 @@
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -10,7 +10,7 @@ body {
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 10px;
   gap: 100px;
 }
@@ -38,8 +38,6 @@ header li:hover {
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
   border-top: 1px solid rgb(129, 129, 129);
   width: 100%;
 }
@@ -47,4 +45,68 @@ footer {
 footer p {
   font-size: 20px;
   margin: 30px 40px;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+main {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin: 100px 0;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main .movie {
+  width: 30%;
+  height: 650px;
+  position: relative;
+}
+
+main img {
+  width: 100%;
+  height: auto;
+}
+
+main .name-add-like {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .name-add-like h2 {
+  width: 80%;
+}
+
+main .name-add-like i {
+  color: rgb(204, 6, 6);
+  cursor: pointer;
+}
+
+main p {
+  text-align: right;
+  font-size: 20px;
+}
+
+main button {
+  width: 100%;
+  border: 0;
+  height: 40px;
+  cursor: pointer;
+}
+
+main button:hover {
+  background-color: rgb(189, 189, 189);
+}
+
+main .comment-btn-div {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
