@@ -1,12 +1,10 @@
 const commentSection = document.querySelector('.commentpop');
 const bodyfix = document.querySelector('body');
-
 const commentPopup = (commentButton, movies) => {
   commentButton.forEach((button, index) => {
     button.addEventListener('click', () => {
       commentSection.classList.add('show');
       bodyfix.classList.add('static');
-
       commentSection.innerHTML = `<div class='comment-js'>
         <div class='name-closeicon'>
         <h2>${movies[index].name}</h2>
@@ -20,7 +18,6 @@ const commentPopup = (commentButton, movies) => {
         <li>rating: ${movies[index].rating.average}</li>
         </ul>
         </div>`;
-
       const closeComment = document.querySelector('.fa-times');
       const closebtn = () => {
         commentSection.classList.remove('show');
@@ -30,5 +27,4 @@ const commentPopup = (commentButton, movies) => {
     });
   });
 };
-
 export { commentPopup as default };
