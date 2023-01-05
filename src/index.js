@@ -10,10 +10,13 @@ const getLikesForMovie = (likes, id) => {
   }
   return 0;
 };
+
 const rederMovies = async (genresType) => {
   let movies = await getMovies();
   movies = movies.filter((item) => item.genres.indexOf(genresType) !== -1);
+
   const likes = await getlikes();
+
   const mainSection = document.querySelector('.main');
   mainSection.innerHTML = '';
   for (let i = 0; i < movies.length; i += 1) {
@@ -32,16 +35,21 @@ const rederMovies = async (genresType) => {
         </div>
         </div>`;
   }
+
   const commentButton = document.querySelectorAll('.comment-btn-div button');
   commentPopup(commentButton, movies);
 };
+
 rederMovies('Action');
+
 const links = document.querySelectorAll('header li');
+
 const resetLinks = () => {
   for (let i = 0; i < links.length; i += 1) {
     links[i].classList.remove('active');
   }
 };
+
 for (let i = 0; i < links.length; i += 1) {
   links[i].addEventListener('click', () => {
     rederMovies(links[i].textContent);
