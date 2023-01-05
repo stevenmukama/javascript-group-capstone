@@ -1,4 +1,5 @@
 const commentSection = document.querySelector('.commentpop');
+
 const bodyfix = document.querySelector('body');
 const commentPopup = (commentButton, movies) => {
   commentButton.forEach((button, index) => {
