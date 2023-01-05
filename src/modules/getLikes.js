@@ -1,11 +1,25 @@
-const commentSection = document.querySelector('.commentpop');
+import { getComments } from './apiController.js';
 
+const commentSection = document.querySelector('.commentpop');
 const bodyfix = document.querySelector('body');
+
 const commentPopup = (commentButton, movies) => {
   commentButton.forEach((button, index) => {
-    button.addEventListener('click', () => {
+    button.addEventListener('click', async () => {
       commentSection.classList.add('show');
       bodyfix.classList.add('static');
+
+      const commentResult = await getComments(movies[index].id);
+
+      let allComment = '';
+      commentResult.forEach((commentResult) => {
+        allComment += `<p>
+          <span class='date'>${commentResult.creation_date}<span>
+          <span class='comment-name'>${commentResult.username}: </span>
+          <span class='comment-detail'>${commentResult.comment} </span>
+          <p>`;
+      });
+
       commentSection.innerHTML = `<div class='comment-js'>
         <div class='name-closeicon'>
         <h2>${movies[index].name}</h2>
@@ -18,7 +32,12 @@ const commentPopup = (commentButton, movies) => {
         <li>tvmaze: <a href="${movies[index].url}" target="_blank">details about show</a></li>
         <li>rating: ${movies[index].rating.average}</li>
         </ul>
+        <div class='add-comments'>
+        <h3>comments(${commentResult.length})</h3>
+        ${allComment}
+        </div>
         </div>`;
+
       const closeComment = document.querySelector('.fa-times');
       const closebtn = () => {
         commentSection.classList.remove('show');
@@ -28,4 +47,5 @@ const commentPopup = (commentButton, movies) => {
     });
   });
 };
+
 export { commentPopup as default };

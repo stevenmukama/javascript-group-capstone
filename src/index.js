@@ -1,6 +1,6 @@
 import './style.css';
 import getMovies, { getlikes } from './modules/apiController.js';
-import commentPopup from './modules/popUp.js';
+import commentPopup from './modules/getLikes.js';
 
 const getLikesForMovie = (likes, id) => {
   for (let i = 0; i < likes.length; i += 1) {
