@@ -126,7 +126,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
   \**************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ getMovies)\n/* harmony export */ });\nconst getMovies = () => fetch('https://api.tvmaze.com/shows')\n  .then((response) => response.json());\n\n\n\n//# sourceURL=webpack://webpack/./src/modules/apiController.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ getMovies)\n/* harmony export */ });\nconst getMovies = () => fetch('https://api.tvmaze.com/shows')\n  .then((response) => response.json());\n\n\n//# sourceURL=webpack://webpack/./src/modules/apiController.js?");
 
 /***/ }),
 
