@@ -1,9 +1,5 @@
-/*
-* @jest-environment jsdom
-*/
-
-import countMovies from './modules/movieCounter.js';
-import getMovies from './modules/apiController.js';
+import countMovies from './movieCounter.js';
+import getMovies from './__mocks__/apiController.js';
 
 jest.mock('./apiController');
 
