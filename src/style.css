@@ -53,6 +53,70 @@ footer p {
   text-decoration: underline;
 }
 
+.main {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+  margin: 100px 0;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main .movie {
+  width: 20%;
+  height: 500px;
+  position: relative;
+}
+
+.main img {
+  width: 100%;
+  height: auto;
+}
+
+.main .name-add-like {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name-add-like h2 {
+  width: 80%;
+}
+
+.main .name-add-like i {
+  color: rgb(204, 6, 6);
+  cursor: pointer;
+}
+
+.main .name-add-like i:hover {
+  color: rgb(133, 4, 4);
+}
+
+.main p {
+  text-align: right;
+  font-size: 20px;
+}
+
+.main button {
+  width: 100%;
+  border: 0;
+  height: 40px;
+  cursor: pointer;
+}
+
+.main button:hover {
+  background-color: rgb(189, 189, 189);
+}
+
+.main .comment-btn-div {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 /*** comment section start ***/
 
 .commentpop {
@@ -165,70 +229,3 @@ footer p {
   margin-left: 60px;
   margin-bottom: 30px;
 }
-
-/* main section starts here */
-.main {
-  min-height: 50vh;
-  display: flex;
-  justify-content: center;
-  gap: 100px;
-  flex-wrap: wrap;
-  margin: 100px 0;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.main .movie {
-  width: 20%;
-  height: 500px;
-  position: relative;
-}
-
-.main img {
-  width: 100%;
-  height: auto;
-}
-
-.main .name-add-like {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.name-add-like h2 {
-  width: 80%;
-}
-
-.main .name-add-like i {
-  color: rgb(204, 6, 6);
-  cursor: pointer;
-}
-
-.main .name-add-like i:hover {
-  color: rgb(133, 4, 4);
-}
-
-.main p {
-  text-align: right;
-  font-size: 20px;
-}
-
-.main button {
-  width: 100%;
-  border: 0;
-  height: 40px;
-  cursor: pointer;
-}
-
-.main button:hover {
-  background-color: rgb(189, 189, 189);
-}
-
-.main .comment-btn-div {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
-/* main section ends here */

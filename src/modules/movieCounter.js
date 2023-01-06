@@ -3,4 +3,6 @@ const countMovies = (movies, genresType) => {
   return selectedMovies.length;
 };
 
+const countComment = (commentResult) => commentResult.length;
+
 export { countMovies as default, countComment };
