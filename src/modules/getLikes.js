@@ -1,7 +1,28 @@
-import { getComments } from './apiController.js';
+import { getComments, postComment } from './apiController.js';
 
 const commentSection = document.querySelector('.commentpop');
 const bodyfix = document.querySelector('body');
+
+const getCommentsHtml = (commentResult) => {
+  let commentsHtml = `<h3>comments(${commentResult.length})</h3>`;
+  for (let i = 0; i < commentResult.length; i += 1) {
+    commentsHtml += `<p>
+      <span class='date'>${commentResult[i].creation_date}<span>
+      <span class='comment-name'>${commentResult[i].username}: </span>
+      <span class='comment-detail'>${commentResult[i].comment} </span>
+      <p>`;
+  }
+  return commentsHtml;
+};
+
+const submitfunction = async (movies, index) => {
+  const form = document.getElementById('comment-form');
+  await postComment(movies[index].id, form.name.value, form.moviecomment.value);
+  const commentResult = await getComments(movies[index].id);
+  document.getElementsByClassName('add-comments')[0].innerHTML = getCommentsHtml(commentResult);
+  form.name.value = '';
+  form.moviecomment.value = '';
+};
 
 const commentPopup = (commentButton, movies) => {
   commentButton.forEach((button, index) => {
@@ -10,15 +31,6 @@ const commentPopup = (commentButton, movies) => {
       bodyfix.classList.add('static');
 
       const commentResult = await getComments(movies[index].id);
-
-      let allComment = '';
-      commentResult.forEach((commentResult) => {
-        allComment += `<p>
-          <span class='date'>${commentResult.creation_date}<span>
-          <span class='comment-name'>${commentResult.username}: </span>
-          <span class='comment-detail'>${commentResult.comment} </span>
-          <p>`;
-      });
 
       commentSection.innerHTML = `<div class='comment-js'>
         <div class='name-closeicon'>
@@ -33,10 +45,24 @@ const commentPopup = (commentButton, movies) => {
         <li>rating: ${movies[index].rating.average}</li>
         </ul>
         <div class='add-comments'>
-        <h3>comments(${commentResult.length})</h3>
-        ${allComment}
+        ${getCommentsHtml(commentResult)}
         </div>
+        <form id="comment-form">
+        <h2>Add your comment</h2>
+        <div>
+            <input type="text" id="name" placeholder="name" required />
+        </div>
+        <div>
+        <textarea id="moviecomment" name="moviecomment" rows="4" cols="50" required></textarea>
+        </div>
+        <div class="button-flex">
+            <button type="button" id="add">Add comment</button>
+        </div>
+    </form>
         </div>`;
+
+      const addComment = document.getElementById('add');
+      addComment.addEventListener('click', () => { submitfunction(movies, index); });
 
       const closeComment = document.querySelector('.fa-times');
       const closebtn = () => {

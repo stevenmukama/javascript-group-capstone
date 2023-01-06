@@ -90,6 +90,10 @@ footer p {
   cursor: pointer;
 }
 
+.main .name-add-like i:hover {
+  color: rgb(133, 4, 4);
+}
+
 .main p {
   text-align: right;
   font-size: 20px;
@@ -214,4 +218,13 @@ footer p {
 .comment-detail {
   font-weight: 400;
   margin-left: 5px;
+}
+
+#comment-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: 60px;
+  margin-bottom: 30px;
 }
