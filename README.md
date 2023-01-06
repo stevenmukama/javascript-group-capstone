@@ -36,6 +36,8 @@
 > Here in this project you can add new comments.
 > Here in this project you can see the number of likes.
 > This project has add comments functionality.
+> This project has a popup when you click on the comments.
+> This project is tested with Jest library.
 > This project stores data in API.
 > This project is totally bug free.
 
@@ -54,6 +56,8 @@
     <li><a href="https://www.w3.org/Style/CSS/current-work.en.html">CSS 3</a></li>
     <li><a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/">JavaScript5</a></li>
     <li><a href="https://webpack.js.org/">Webpack Framework</a></li>
+    <li><a href="https://jestjs.io/">Jest Library</a></li>
+
   </ul>
 </details>
 
