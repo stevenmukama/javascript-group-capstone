@@ -26,13 +26,18 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [TODO LIST] <a name="about-project"></a>
+# 📖 [Javascript group capstone] <a name="about-project"></a>
 
-> This project is a Leaderboard app. In this project you can save your Name and scores.
-> This application calls an Api to fetch data. which is created using pure Html5, Css3, ES6 and      Webpack 5.
+> This project is a movie app. In this project you can see action movies that are recent, you can like the movie that you want, you can add comment to a movie.
+> This application calls an Api to fetch data which is a movie Database api,created using pure Html5,Css3, ES6 and Webpack 5.
 > This project is developed by using Html5 Css3 and ES-6 with Webpack 5.
-> Here in this project you can add new tasks.
-> This project has add functionality.
+> Here in this project you can see images of movies.
+> Here in this project you can add new likes.
+> Here in this project you can add new comments.
+> Here in this project you can see the number of likes.
+> This project has add comments functionality.
+> This project has a popup when you click on the comments.
+> This project is tested with Jest library.
 > This project stores data in API.
 > This project is totally bug free.
 
@@ -41,6 +46,8 @@
 ### Tech Stack <a name="tech-stack"></a>
 
 > Following technologies have been used in this project.
+> HTML5, CSS, Javascript.
+
 
 <details>
   <summary>Client</summary>
@@ -49,6 +56,8 @@
     <li><a href="https://www.w3.org/Style/CSS/current-work.en.html">CSS 3</a></li>
     <li><a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/">JavaScript5</a></li>
     <li><a href="https://webpack.js.org/">Webpack Framework</a></li>
+    <li><a href="https://jestjs.io/">Jest Library</a></li>
+
   </ul>
 </details>
 
@@ -63,8 +72,8 @@
 
 ### Key Features <a name="key-features"></a>
 
-> This project is a Leaderboard app. In this project you can save your Name and scores.
-> This application calls an Api to fetch data. which is created using pure Html5, Css3, ES6 and      Webpack 5.
+> This project is a movie app. In this project you can see recent action movies and likes the movie has.
+> This application calls an movie Api to fetch data 
 > This project is configured with webpack 5.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -96,7 +105,7 @@ In order to run this project you need:
 
 ### Setup
 
-Clone this repository by using the command line : git clone https://github.com/tanveerisonline/leaderboard.git
+Clone this repository by using the command line : git clone https://github.com/stevenmukama/javascript-group-capstone.git
 
 ### Install
 
@@ -132,6 +141,9 @@ Github Pages.
 
 - GitHub: [@tanveerisonline](https://github.com/tanveerisonline)
 
+👤 **Author2**
+
+- GitHub: [@stevenmukama](https://github.com/stevenmukama)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
