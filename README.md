@@ -82,8 +82,8 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Soon you will find a live demo link here:
-
+> Live demo:
+ https://stevenmukama.github.io/javascript-group-capstone/dist/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
