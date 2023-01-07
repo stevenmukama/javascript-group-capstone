@@ -73,8 +73,9 @@
 ### Key Features <a name="key-features"></a>
 
 > This project is a movie app. In this project you can see recent action movies and likes the movie has.
-> This application calls an movie Api to fetch data 
+> This application calls an movie Api to fetch data.
 > This project is configured with webpack 5.
+> This project is tested using Jest library.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
