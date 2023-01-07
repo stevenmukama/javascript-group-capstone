@@ -83,7 +83,14 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 > Live demo:
+
  https://stevenmukama.github.io/javascript-group-capstone/dist/
+ 
+ !-- VIDEO WORKTHROUGH -->
+ 
+ ## 🚀 VIDEO WORKTHROUGH <a name="live-demo"></a>
+ 
+ https://drive.google.com/drive/u/2/folders/1irLO3HIQ1FeplF-3QxRep68xuQPsD1EP
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
