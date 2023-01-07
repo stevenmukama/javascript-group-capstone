@@ -86,7 +86,7 @@
 
  https://stevenmukama.github.io/javascript-group-capstone/dist/
  
- !-- VIDEO WORKTHROUGH -->
+ <!-- VIDEO WORKTHROUGH -->
  
  ## 🚀 VIDEO WORKTHROUGH <a name="live-demo"></a>
  
