@@ -63,10 +63,23 @@ footer {
 footer p {
   font-size: 20px;
   margin: 30px 40px;
+  color: #fff;
 }
 
 .active {
   text-decoration: red underline;
+}
+
+input {
+  color: red;
+  padding-left: 4px;
+  font-size: 14px;
+}
+
+textarea {
+  color: red;
+  padding-left: 4px;
+  font-size: 16px;
 }
 
 .main {
@@ -141,7 +154,7 @@ footer p {
 }
 
 .main button:hover {
-  background-color: rgb(189, 189, 189);
+  background-color: rgb(199, 2, 2);
 }
 
 .main .comment-btn-div {
@@ -223,11 +236,11 @@ footer p {
 
 .comment-js ul {
   list-style-type: none;
-  margin-bottom: 40px;
-  margin-left: 30px;
-  color: #fff;
-  padding-top: 20px;
-  font-size: 20px;
+  margin-bottom: 42px;
+  margin-left: 52px;
+  color: #ff0303;
+  padding-top: 25px;
+  font-size: 22px;
 }
 
 .comment-js ul li a {
